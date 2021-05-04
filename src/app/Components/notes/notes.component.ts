@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+interface notesData {
+  title: string;
+  content: string;
+  date: string;
+}
+
 @Component({
   selector: 'app-notes',
   templateUrl: './notes.component.html',
@@ -7,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotesComponent implements OnInit {
 
+  data: notesData;
   constructor() { }
 
   ngOnInit(): void {

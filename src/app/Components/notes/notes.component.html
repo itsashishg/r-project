@@ -1,7 +1,11 @@
-<app-navbar>
+<app-sidebar>
     <div class="container-fluid">
-        <div class="col-sm heading">
-            <h2>Note It!</h2>
+
+        <div style="margin: auto;text-align: center; margin-top: 2%;">
+            <mat-form-field appearance="outline" style="width: 50%;">
+                <mat-label>Start Typing here</mat-label>
+                <input matInput placeholder="Placeholder" [(ngModel)]="data.title">
+            </mat-form-field>
         </div>
     </div>
-</app-navbar>
+</app-sidebar>
