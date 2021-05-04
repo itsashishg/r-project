@@ -14,6 +14,8 @@ interface notesData {
 export class NotesComponent implements OnInit {
 
   data: notesData;
+  title: string;
+  content: string;
   constructor() { }
 
   ngOnInit(): void {
